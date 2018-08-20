@@ -111,6 +111,7 @@ We can now get some interesting numbers. For example, *the Top 10 likers of my I
 ```python
 df_likers.username.value_counts()[:10]
 ```
+```
 letikoch           71
 lucashinsching     58
 krlosvinicius      52
@@ -124,4 +125,3 @@ saramondini        38
 Name: username, dtype: int64
 ```
 
-```
