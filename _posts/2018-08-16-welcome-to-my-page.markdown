@@ -5,7 +5,7 @@ title: "Exploring your Instagram data"
 ---
 
 In this post I want to talk a bit about how exploring your own Instagram account and generate interesting insights.
-I will be using Python ([Jupyter Notebook])(https://jupyter.org/) for this, with the following packages:
+I will be using [iPython - Jupyter Notebook](https://jupyter.org/) for this, with the following packages:
 - pandas
 - [LevPasha/Instagram-API-python](https://github.com/LevPasha/Instagram-API-python) (unofficial Instagram API)
 
@@ -31,7 +31,8 @@ api = login_to_instagram('instagram_username','instagram_password')
 ```
 Once executed, you should receive this return message: `Login success!`
 
-Cool, we are logged in to Instagram! Now we can start exploring it. I believe it's natural to start retrieving all your posts:
+Cool, we are logged in to Instagram! 
+Now we can start exploring it. I believe it's natural to start retrieving all your posts:
 ```python
 def get_my_posts(api):
     '''Retrieve all posts from own profile'''
@@ -57,5 +58,13 @@ def get_my_posts(api):
 
 my_posts = get_my_posts(api)
 ```
+The output will look like this:
+> 18 posts retrieved so far...
+> 36 posts retrieved so far...
+> 54 posts retrieved so far...
+> 72 posts retrieved so far...
+> Total posts retrieved: 90
 
-`my_posts` will be a list of dictionaries, and each item represents a single post from your Instagram account. I encourage you to explore 
+`my_posts` will be a list of dictionaries, and each item represents a single post from your Instagram account. In my case, I have only 90 posts. 
+I encourage you to explore the available fields of each post. Many interesting stuff there :)
+
