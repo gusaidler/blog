@@ -83,13 +83,14 @@ defaults:
       type: posts
     values:
       layout: post
+      comments: true
       share: true
 
 # Site Author
 author:
-  name:
-  picture:
-  email:
+  name: Gustavo Saidler
+  picture: /assets/images/gustavo-saidler.jpg
+  email: gustavo.saidler@gmail.com
   twitter:
   links:
     - title:
