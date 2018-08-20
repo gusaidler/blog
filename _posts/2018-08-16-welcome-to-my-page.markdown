@@ -127,4 +127,4 @@ Name: username, dtype: int64
 Hmm, "leassxch" is the person who liked my post the most: out of 90 posts, he liked 71 of them!
 
 Let's plot the distribution of this Top 10:
-![left-aligned-image](likers_plot.png){: .align-left}
+![left-aligned-image](/_posts/likers_plot.png){: .align-left}
