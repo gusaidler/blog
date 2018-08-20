@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Data analysis: Your own Instagram data"
+title: "Data analysis: Your Instagram data"
 
 ---
 
@@ -127,4 +127,5 @@ Name: username, dtype: int64
 Hmm, "leassxch" is the person who liked my post the most: out of 90 posts, he liked 71 of them!
 
 Let's plot the distribution of this Top 10:
-![left-aligned-image](_posts/likers_plot.png){: .align-left}
+![image-title-here](likers_plot.png){:class="img-responsive"}
+
