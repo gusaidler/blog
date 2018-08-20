@@ -1,7 +1,6 @@
 ---
 layout: home
-excerpt: "Dedicated to exploring data!"
+limit: 10
 show_excerpts: true
-paginate: true
 entries_layout: list
 ---
