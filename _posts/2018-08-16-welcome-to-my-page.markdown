@@ -113,8 +113,8 @@ We can now get some interesting numbers. For example:
 ```python
 df_likers.username.value_counts()[:10]
 ```
-
->leassxch           71
+```
+leassxch           71
 lucaszcssching     58
 krlosawqicius      52
 jeplqiwnini        50
@@ -125,7 +125,7 @@ joanadaoaikj       40
 fpridcdsdwac       39
 sarakquwhjk        38
 Name: username, dtype: int64
-
+```
 Hmm, "leassxch" is the person who liked my post the most: out of 90 posts, he liked 71 of them!
 Let's plot the distribution of this Top 10:
 ![image-center]({{ '/assets/images/likers_plot.jpg'|absolute_url}}){: .align-center}
