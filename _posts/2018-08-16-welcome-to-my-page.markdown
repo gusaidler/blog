@@ -1,7 +1,14 @@
 ---
 layout: post
-title: "Welcome to my blog!"
+title: "Exploring your Instagram data"
 
 ---
 
-hi there!
+In this post I want to talk a bit about how exploring your own Instagram account and generate interesting insights.
+
+```
+def function():
+
+	print('Oh hey there!')
+
+```
