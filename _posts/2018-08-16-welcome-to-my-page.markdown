@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Exploring your own Instagram data"
+title: "Data analysis: Your own Instagram data"
 
 ---
 
@@ -28,7 +28,6 @@ def login_to_instagram(username, password):
     return api
 
 api = login_to_instagram('instagram_username','instagram_password')
-
 ```
 Once executed, you should receive this return message: `Login success!`
 
@@ -59,8 +58,8 @@ def get_my_posts(api):
 
 my_posts = get_my_posts(api)
 ```
-```
 The output should look like this:
+```
 18 posts retrieved so far...
 36 posts retrieved so far...
 54 posts retrieved so far...
@@ -107,21 +106,25 @@ It's time to use the powerful `pandas` package and structure this data a little 
 df_likers = json_normalize(likers, 'users', ['post_id'])	
 ```
 With this, we have a pandas DataFrame `df_likers`, where each row represents a single like. 
-We can now get some interesting numbers. For example, *the Top 10 likers of my Instagram account*:
+We can now get some interesting numbers. For example: 
+###Top 10 likers of my Instagram account:
 ```python
 df_likers.username.value_counts()[:10]
 ```
 ```
-letikoch           71
-lucashinsching     58
-krlosvinicius      52
-jepiccinini        50
-guibarbieris       44
-hayonertillmann    42
-mateustamborlin    41
-joanadebatin       40
-fprimarano12       39
-saramondini        38
+leassxch           71
+lucaszcssching     58
+krlosawqicius      52
+jeplqiwnini        50
+gukashwberis       44
+haylasnqjwnmann    42
+mateustcqqwelin    41
+joanadaoaikj       40
+fpridcdsdwac       39
+sarakquwhjk        38
 Name: username, dtype: int64
 ```
+Hmm, "leassxch" is the person who liked my post the most: out of 90 posts, he liked 71 of them!
 
+Let's plot the distribution of this Top 10:
+![left-aligned-image](likers_plot.png){: .align-left}
