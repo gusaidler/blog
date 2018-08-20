@@ -108,7 +108,7 @@ df_likers = json_normalize(likers, 'users', ['post_id'])
 With this, we have a pandas DataFrame `df_likers`, where each row represents a single like. 
 We can now get some interesting numbers. For example: 
 
-##Top 10 likers of my Instagram account:
+### Top 10 likers of my Instagram account:
 
 ```python
 df_likers.username.value_counts()[:10]
