@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Data analysis: Your Instagram data"
+categories:
+ - pandas
+ - python
 
 ---
 

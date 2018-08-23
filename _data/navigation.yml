@@ -6,8 +6,8 @@
   url: /posts/
 - title: About me
   url: /about/
-# - title: Tags
-#   url: /tags/
+- title: Recommended materials
+  url: /recommended/
 # - title: Recipes
 #   url: /recipes/
 - title: Search
