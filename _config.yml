@@ -16,7 +16,7 @@
 #theme: jekyll-theme-so-simple
 # remote_theme: mmistakes/so-simple-theme
 locale: en-US
-title: "Gustavo Saidler"
+title: ""
 description: "A blog dedicated to my journey throughout the fascinating world of data"
 baseurl: "/gs_blog" # the subpath of your site, e.g. "/blog"
 url: "https://gusaidler.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"

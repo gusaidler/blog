@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Data analysis: Your Instagram data"
+image: 
+  path: {{ '/assets/images/likers_plot.png'|absolute_url}}
 categories:
  - pandas
  - python
