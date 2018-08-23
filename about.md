@@ -17,6 +17,7 @@ To be more specific, I am focusing on the following technologies:
 - Hadoop and its "tools"
 
 I've recently decided to explore the data behind the apps we all use on a daily basis (e.g. Facebook, Instagram, Twitter, Spotify... )
-There is a huge opportunity to know more about ourselves by analysing what we do and where we spend our time online, right?. Hopefully you can also get some nice insights here :)
+There is a huge opportunity to know more about ourselves by analysing what we do and where we spend our time online, right?
+Hopefully you can also get some interesting insights here :)
 
-If for whatever reason you want to contact me, please do at: gustavo.saidler@gmail.com
+If for whatever reason you want to contact me, please do at: <gustavo.saidler@gmail.com>
