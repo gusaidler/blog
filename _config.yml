@@ -16,14 +16,14 @@
 #theme: jekyll-theme-so-simple
 # remote_theme: mmistakes/so-simple-theme
 locale: en-US
-title: ""
+title: "Gustavo Saidler"
 description: "A blog dedicated to my journey throughout the fascinating world of data"
 baseurl: "/gs_blog" # the subpath of your site, e.g. "/blog"
 url: "https://gusaidler.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: /assets/images/gs-site-logo.png # path of site logo, e.g. "/images/logo.png"
 date_format: "%Y-%m-%d"
-read_time: # reading time estimates, e.g. true
-words_per_minute: # 200
+read_time: true # reading time estimates, e.g. true
+words_per_minute:  200
 mathjax: # MathJax equations, e.g. true
 google_fonts:
   - name: "Source Sans Pro"
@@ -32,7 +32,7 @@ google_fonts:
     weights: "400,400i,700,700i"
 google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
-  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+  shortname: gustavosaidler # Disqus shortname, e.g. "my_disqus_shortname"
 twitter:
   username: # site's Twitter username, e.g. "mmistakes"
 
@@ -51,7 +51,7 @@ feed:
 # paginate_path: /page:num/
 
 # Search
-search_full_content: false # can have performance implications for large sites
+search_full_content: true # can have performance implications for large sites
 
 # Taxonomy pages
 # category_archive_path: "/categories/#"
