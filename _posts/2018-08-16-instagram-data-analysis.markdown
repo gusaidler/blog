@@ -2,7 +2,6 @@
 layout: post
 title: "Data analysis: Your Instagram data"
 image: 
-  path: /assets/images/instagram-download.png
   thumbnail: /assets/images/instagram-download.png
 categories:
  - python
@@ -10,7 +9,7 @@ categories:
  
 
 ---
-
+![image-center]({{ '/assets/images/instagram-download.png'|absolute_url}}){: .align-center}
 In this post I want to talk a bit about how exploring your own Instagram account and generate interesting insights.
 I will be using [iPython - Jupyter Notebook](https://jupyter.org/) for this, with the following packages:
 - pandas
