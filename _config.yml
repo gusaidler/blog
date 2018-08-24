@@ -18,7 +18,7 @@
 locale: en-US
 title: ""
 description: "A blog dedicated to my journey throughout the fascinating world of data"
-baseurl: "/blog" # the subpath of your site, e.g. "/blog"
+baseurl: "" # the subpath of your site, e.g. "/blog"
 url: "https://gustavosaidler.com" # "https://gusaidler.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: /assets/images/gs-site-logo.png # path of site logo, e.g. "/images/logo.png"
 date_format: "%Y-%m-%d"
