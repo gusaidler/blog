@@ -5,8 +5,9 @@ image:
   path: /assets/images/instagram-download.png
   thumbnail: /assets/images/instagram-download.png
 categories:
- - pandas
  - python
+ - pandas
+ 
 
 ---
 
