@@ -6,4 +6,4 @@ image:
   caption: "Photo from [Pexels](https://www.pexels.com)"
 ---
 
-yay
+This was my absolute favorite beginner Python book.

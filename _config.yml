@@ -75,12 +75,26 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
+# Collections
+collections:
+  recommended:
+    output: true
+    permalink: /:collection/:path/
+
 # Front Matter Defaults
 defaults:
   # Posts defaults
   - scope:
       path: "_posts"
       type: posts
+    values:
+      layout: post
+      comments: true
+      share: true
+  # Recommended page defaults
+  - scope:
+      path: "_recommended"
+      type: recommended
     values:
       layout: post
       comments: true
