@@ -1,5 +1,5 @@
 ---
-title: Recommended Material
+title: Recommended
 layout: collection
 permalink: /recommended/
 collection: recommended
