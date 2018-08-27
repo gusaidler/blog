@@ -19,6 +19,8 @@ I will be using [iPython - Jupyter Notebook](https://jupyter.org/) for this, wit
 
 First of all, please read the [README](https://github.com/LevPasha/Instagram-API-python/blob/master/README.md) in order to install the InstagramAPI package.
 
+I assume you will have `pandas` installed already.
+
 Then, let's import the necessary packages that will be used along this demonstration:
 
 ```python
@@ -137,6 +139,8 @@ commenters = get_posts_commenters(api, my_posts)
 You will have to wait the same time as you waited to retrieve the `likers`, and `done` will be printed out once it's finished.
 `commenters` will also be a list of dictionaries, and should have the same length as `my_posts`. The actual comments will be under the key `comments` of each item of the `commenters` list. 
 
+## Converting to pandas DataFrames
+
 It's time to use the powerful `pandas` package and structure this data a little bit. I'll use [json_normalize](https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.io.json.json_normalize.html) within pandas.io.json. The data transformation differs a bit betweeen `likers` and `commenters`:
 ```python
 def posts_likers_to_df(likers):
@@ -254,7 +258,7 @@ df_commenters.created_at.dt.hour.value_counts().sort_index().plot(kind='bar', fi
 ```
 ![Bar plot]({{ '/assets/images/posts/instagram-data-analysis/commenters_hour_utc_plot_bar.png'|absolute_url}}){: .align-center}
 
-The thing is, I am actually Brazilian and I know for a fact that most part of my "Instagram audience" is also Brazilian, but the `create_at` field in UTC time. So at least for me, the results of the chart above might not be what I am looking for.
+The thing is, I am actually Brazilian and I know for a fact that most part of my "Instagram audience" is also Brazilian, but the `create_at` field in UTC time. So, at least for me, the results of the chart above might not be what I am looking for.
 Not a problem, as I can easily create a new column in the `df_commenters` DataFrame and store the conversion from UTC to Brazilian time in it:
 ```python
  # Create a column to show when a a comment was created in Brazilian time
