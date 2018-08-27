@@ -234,6 +234,7 @@ df_commenters['username'].value_counts()[:10].plot(kind='bar', figsize=(12,6), t
 ![Bar plot]({{ '/assets/images/posts/instagram-data-analysis/commenters_plot_bar.png'|absolute_url}}){: .align-center}
 
 The interesting thing about comments is that the actual datetime is captured for each one of them (not available for likes, unfortunately). The fields are: `created_at` and `created_at_utc`. Therefore, we can play around with it a little bit. 
+
 For example, I was curious to know on which day of the week I receive more comments. To accomplish this, first we have to convert the columns to actual datefime type:
 ```python
 # Converts date from unix time to YYYY-MM-DD hh24:mm:ss
@@ -253,7 +254,7 @@ df_commenters.created_at.dt.hour.value_counts().sort_index().plot(kind='bar', fi
 ```
 ![Bar plot]({{ '/assets/images/posts/instagram-data-analysis/commenters_hour_utc_plot_bar.png'|absolute_url}}){: .align-center}
 
-The thing is, I am actually Brazilian and I know for a fact that most part of my "Instagram audience" is also Brazilian, but the `create_at` field is actually in UTC time. So at least for me, the results of the chart above might not be what I am looking for.
+The thing is, I am actually Brazilian and I know for a fact that most part of my "Instagram audience" is also Brazilian, but the `create_at` field in UTC time. So at least for me, the results of the chart above might not be what I am looking for.
 Not a problem, as I can easily create a new column in the `df_commenters` DataFrame and store the conversion from UTC to Brazilian time in it:
 ```python
  # Create a column to show when a a comment was created in Brazilian time
@@ -263,5 +264,5 @@ Let's plot again and see the difference:
 ```python
 df_commenters.created_at_br.dt.hour.value_counts().sort_index().plot(kind='bar', figsize=(12,6))
 ```
-![Bar plot]({{ '/assets/images/posts/instagram-data-analysis/commenters_hour_brt_plot_bar.png'|absolute_url}}){: .align-center}plot_bar
+![Bar plot]({{ '/assets/images/posts/instagram-data-analysis/commenters_hour_brt_plot_bar.png'|absolute_url}}){: .align-center}
 
