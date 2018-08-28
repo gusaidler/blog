@@ -221,7 +221,7 @@ Hmm, "tetxhrcc" is the person who liked my post the most: out of 90 posts, he li
 Let's plot the distribution of this Top 10:
 ##### Bar plot
 ```python
-df_likers.username.value_counts()[:10].plot(kind='bar', title='Top 20 media likers', grid=True, figsize=(12,6))
+df_likers.username.value_counts()[:10].plot(kind='bar', title='Top 10 media likers', grid=True, figsize=(12,6))
 ```
 ![Bar plot]({{ '/assets/images/posts/instagram-data-analysis/likers_plot_bar.png'|absolute_url}}){: .align-center}
 ##### Pie plot
@@ -258,7 +258,7 @@ df_commenters.created_at.dt.hour.value_counts().sort_index().plot(kind='bar', fi
 ```
 ![Bar plot]({{ '/assets/images/posts/instagram-data-analysis/commenters_hour_utc_plot_bar.png'|absolute_url}}){: .align-center}
 
-The thing is, I am actually Brazilian and I know for a fact that most part of my "Instagram audience" is also Brazilian, but the `create_at` field in UTC time. So, at least for me, the results of the chart above might not be what I am looking for.
+The thing is, I am actually Brazilian and I know for a fact that most part of my "Instagram audience" is also Brazilian, but the `create_at` field is in UTC time. So, at least for me, the results of the chart above might not be what I am looking for.
 Not a problem, as I can easily create a new column in the `df_commenters` DataFrame and store the conversion from UTC to Brazilian time in it:
 ```python
  # Create a column to show when a a comment was created in Brazilian time

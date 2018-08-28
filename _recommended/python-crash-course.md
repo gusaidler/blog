@@ -1,6 +1,7 @@
 ---
 title: "Python Crash Course"
 image:
+  path: /assets/images/recommended/python-crash-course-post.png
   thumbnail: /assets/images/recommended/python-crash-course.png
 ---
 
