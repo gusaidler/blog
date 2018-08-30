@@ -2,8 +2,8 @@
 layout: post
 title: "Data analysis: Your Instagram data"
 image: 
-  path: /assets/images/instagram-download.png
-  thumbnail: /assets/images/instagram-download.png
+  path: /assets/images/posts/instagram-data-analysis/instagram-download.png
+  thumbnail: /assets/images/posts/instagram-data-analysis/instagram-download.png
 categories:
  - python
  - pandas
