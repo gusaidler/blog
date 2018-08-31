@@ -8,7 +8,7 @@ image:
 This is my absolute favorite beginner's Python book, it is easy to follow and actually a pleasant read.
 The book is split in 2 parts:
 1. The first half will cover the basics (programming concepts, such as lists, dictionaries, classes, and loops)
-2. The second half covers 3 projects. 
+2. The second half covers 3 projects:
 	1. Create your own Space Invaders 2D game using the `pygame` package  
 	2. Explore the capabilities of some python packages for Data Visualization
 	3. Create and deploy a web app with `Django`, called Learning Log, to be used to document what you learn about certain topics
