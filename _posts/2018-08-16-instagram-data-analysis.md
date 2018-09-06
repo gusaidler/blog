@@ -7,8 +7,6 @@ image:
 categories:
  - python
  - pandas
- 
-
 ---
 
 In this post I want to talk a bit about how to explore your own Instagram account and generate interesting insights.
