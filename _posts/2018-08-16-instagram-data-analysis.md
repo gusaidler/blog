@@ -10,12 +10,12 @@ categories:
 ---
 
 In this post I want to talk a bit about how to explore your own Instagram account and generate interesting insights.
-I will be using [iPython - Jupyter Notebook](https://jupyter.org/) for this, with the following packages:
+I will be using [iPython - Jupyter Notebook](https://jupyter.org/){:target="_blank"} for this, with the following packages:
 - pandas
-- [LevPasha/Instagram-API-python](https://github.com/LevPasha/Instagram-API-python) (unofficial Instagram API)
+- [LevPasha/Instagram-API-python](https://github.com/LevPasha/Instagram-API-python){:target="_blank"} (unofficial Instagram API)
 
 
-First of all, please read the [README](https://github.com/LevPasha/Instagram-API-python/blob/master/README.md) in order to install the InstagramAPI package.
+First of all, please read the [README](https://github.com/LevPasha/Instagram-API-python/blob/master/README.md){:target="_blank"} in order to install the InstagramAPI package.
 
 I assume you will have `pandas` installed already.
 
@@ -139,7 +139,7 @@ You will have to wait the same time as you waited to retrieve the `likers`, and 
 
 ## Converting to pandas DataFrames
 
-It's time to use the powerful `pandas` package and structure this data a little bit. I'll use [json_normalize](https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.io.json.json_normalize.html) within pandas.io.json. The data transformation differs a bit betweeen `likers` and `commenters`:
+It's time to use the powerful `pandas` package and structure this data a little bit. I'll use [json_normalize](https://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.io.json.json_normalize.html){:target="_blank"} within pandas.io.json. The data transformation differs a bit betweeen `likers` and `commenters`:
 ```python
 def posts_likers_to_df(likers):
     '''Transforms likers list of dicts into pandas DataFrame'''
@@ -243,7 +243,7 @@ For example, I was curious to know on which day of the week I receive more comme
 df_commenters.created_at = pd.to_datetime(df_commenters.created_at, unit='s')
 df_commenters.created_at_utc = pd.to_datetime(df_commenters.created_at_utc, unit='s')
 ```
-Now, we can make use of the [Datetime Properties](https://pandas.pydata.org/pandas-docs/stable/api.html#datetimelike-properties), which allow us to return many properties, like: `year, month, week, dayofweek...`
+Now, we can make use of the [Datetime Properties](https://pandas.pydata.org/pandas-docs/stable/api.html#datetimelike-properties){:target="_blank"}, which allow us to return many properties, like: `year, month, week, dayofweek...`
 So, continuing with the example, I can now plot on which day of the week I receive more comments:
 ```python
 df_commenters.created_at.dt.weekday.value_counts().sort_index().plot(kind='bar', figsize=(12,6), title='Comments per day of the week (0 - Sunday, 6 - Saturday)')
