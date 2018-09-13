@@ -5,6 +5,9 @@ image:
   path: /assets/images/posts/instagram-data-analysis/instagram-download.png
   thumbnail: /assets/images/posts/instagram-data-analysis/instagram-download.png
 categories:
+ - data analysis
+tags:
+ - social media
  - python
  - pandas
 ---

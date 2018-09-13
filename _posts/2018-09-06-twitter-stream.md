@@ -6,6 +6,9 @@ image:
   path: /assets/images/posts/twitter-stream/twitter-post.png
   thumbnail: /assets/images/posts/twitter-stream/twitter-post.png
 categories:
+ - data analysis
+tags:
+ - social media
  - python
  - pandas
 ---
@@ -104,13 +107,9 @@ All 500 tweets were successfully collected and stored on the file defined earlie
 tweets_data = []
 
 # Open connection to file
-tweets_file = open(OUTPUT_FILE, "r")
-
-# Read in tweets and store in list
-for line in tweets_file:
-    tweet = json.loads(line)
-    tweets_data.append(tweet)
-
-# Close connection to file
-tweets_file.close()
+with open(OUTPUT_FILE, "r") as tweets_file:
+    # Read in tweets and store in list
+    for line in tweets_file:
+        tweet = json.loads(line)
+        tweets_data.append(tweet)
 ```
