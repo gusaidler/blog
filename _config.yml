@@ -28,7 +28,7 @@ mathjax: # MathJax equations, e.g. true
 google_fonts:
   - name: "Roboto"
     weights: "400,400i,700,700i"
-  - name: "Open Sans"
+  - name: "Ubuntu"
     weights: "400,400i,700,700i"
 google_analytics: "UA-40103088-2" # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
