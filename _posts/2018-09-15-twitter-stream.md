@@ -251,6 +251,6 @@ plt.axis("off")
 ![Word Cloud]({{ '/assets/images/posts/twitter-stream/twitter_wordcloud.png'|absolute_url}}){: .align-center}
 
 Awesome, I believe it is quite easy to catch what was being spoken about Donald Trump during this "Twitter Streaming session", which took **1h31m, starting at 2018-09-15 11:00 CEST**. Here some things I could deduce from the image:
-- **Paul Manafort**, most probably due to his [ongoing criminal trials](https://en.wikipedia.org/wiki/Trials_of_Paul_Manafort){:target="_blank"} in connection with the 2016 USA elections and the Russian interference
-- **Chinese / tariffs / bln**: we all know about the recent commercial war between USA and China (started by Trump, of course)  
+- **Paul Manafort**, most probably due to his [ongoing criminal trials](https://en.wikipedia.org/wiki/Trials_of_Paul_Manafort){:target="_blank"} in connection with the 2016 USA elections and the Russian interference;
+- **Chinese / tariffs / bln**: we all know about the recent commercial war between USA and China (started by Trump, of course);
 - **Crise** (crisis): well... the 2 topics above can explain this one.
