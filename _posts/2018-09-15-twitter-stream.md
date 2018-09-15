@@ -74,7 +74,6 @@ class MyStreamListener(tweepy.StreamListener):
 
     def on_error(self, status):
         print(status)
-        
 ```
 It's time to start streaming live tweets, so I will initialize the `MyStreamListener` class and pass it as an argument to `tweepy.Stream`, along with the authenticator set before.
 
@@ -91,8 +90,8 @@ stream = tweepy.Stream(auth, l)
 # Filter Twitter Streams to capture data by the keywords:
 stream.filter(track=TRACKING_KEYWORDS)
 ```
-Great, at this point the tweets are being captured. The execution speed will depend on how "hot/trending" the keywords you defined currently are on Twitter. I defined keywords to collect data about Donald Trump, which is always a hot topic...
-You should see an output similar to this:
+Great, at this point the tweets are being captured. The execution speed will depend on how "hot/trending" the keywords you defined currently are on Twitter. I defined keywords to collect data about Donald Trump, which is always a hot topic...  
+You should see an output similar to this when it finishes:
 ```
 Numer of tweets captured so far: 100
 Numer of tweets captured so far: 200
@@ -222,9 +221,9 @@ Cool, it should be a bit cleaner. Now, let's convert the `text` column to a sing
 ```python
 text = ' '.join(txt for txt in df.text)
 print ('There are {} words in the combination of text rows.'.format(len(text)))
-
-There are 482984 words in the combination of text rows.
 ```
+`There are 482984 words in the combination of text rows.`
+
 **It is time to create our Word Cloud!**  
 The `wordcloud` package works together with `matplotlib`, so let's import them:
 ```python
