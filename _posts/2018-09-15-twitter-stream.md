@@ -144,7 +144,8 @@ df.head()
 This is a very simple DataFrame, but we can still check some interesting stuff. Here I am just checking the tweets count for Language and Source:
 ```python
 df.lang.value_counts()
-
+```
+```
 en     4293
 fr      253
 und     159
@@ -159,9 +160,11 @@ no        6
 el        1
 cs        1
 Name: lang, dtype: int64
-----------
+```
+```python
 df.source.value_counts()
-
+```
+```
 Twitter for iPhone                1672
 Twitter for Android               1405
 Twitter Web Client                 910
