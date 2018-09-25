@@ -5,7 +5,9 @@ image:
   thumbnail: /assets/images/recommended/automate-boring-stuff.jpg
 ---
 
-This book is all about showing you how to use Python to perform all sorts of repetitive tasks, but it is also a beginner's book, and the first part of it covers the Python basics: Python shell, variables, list, dictionaries...
+This book is all about showing you how to use Python to perform all sorts of repetitive tasks, but it is also a beginner's book
+
+The first part of it covers the Python basics: Python shell, variables, list, dictionaries...
 To be honest, if you are really new to Python I would recommend reading the first part of the [Python Crash Course](https://gustavosaidler.com/recommended/python-crash-course/) book rather than this one. I think it is a bit easier to follow and understand the concepts.
 
 

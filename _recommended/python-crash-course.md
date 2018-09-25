@@ -5,7 +5,9 @@ image:
   thumbnail: /assets/images/recommended/python-crash-course.png
 ---
 
-This is my absolute favorite beginner's Python book, it is easy to follow and actually a pleasant read. If you want to start learning Python, this is in my opinion a must read! If you do a quick search online you'll see that a lot of people share the same opinion, so don't overthink it :)
+This is my absolute favorite beginner's Python book, it is easy to follow and actually a pleasant read. If you want to start learning Python, this is in my opinion a must read! 
+
+If you do a quick search online you'll see that a lot of people share the same opinion, so don't overthink it :)
 
 
 This book is split in 2 parts:
