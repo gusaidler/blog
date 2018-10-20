@@ -7,10 +7,12 @@ image:
 categories:
  - data analysis
 tags:
+ - api
  - social media
  - python
  - visualization
  - pandas
+ - jupyter
 ---
 
 I would like to share how it is possible to stream tweets in real-time based on a set of defined keywords. In other words, how to capture public tweets as they are generated worldwide.

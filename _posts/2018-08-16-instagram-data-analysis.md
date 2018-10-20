@@ -1,18 +1,20 @@
 ---
 layout: post
-title: "Data analysis: Your Instagram data"
+title: "Analyzing Instagram data with Python"
 image: 
   path: /assets/images/posts/instagram-data-analysis/instagram-download.png
   thumbnail: /assets/images/posts/instagram-data-analysis/instagram-download.png
 categories:
  - data analysis
 tags:
+ - api
  - social media
  - python
  - pandas
+ - jupyter
 ---
 
-In this post I want to talk a bit about how to explore your own Instagram account and generate interesting insights.
+In this post I want to talk a bit about how to explore your own Instagram account data and generate interesting insights.
 I will be using [iPython - Jupyter Notebook](https://jupyter.org/){:target="_blank"} for this, with the following packages:
 - pandas
 - [LevPasha/Instagram-API-python](https://github.com/LevPasha/Instagram-API-python){:target="_blank"} (unofficial Instagram API)
