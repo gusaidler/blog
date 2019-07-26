@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: gustavosaidler.com
+Token: b3660728ef23226f7673dda02d7329cf94d027ca145552e12adb6bfb52aab750
