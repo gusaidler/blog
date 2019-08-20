@@ -3,7 +3,7 @@ layout: post
 title: "Simulating an UPSERT between 2 datasets using pySpark"
 excerpt: "Sometimes, when working with big datasets in Hadoop, you will need to join data which share the same structure together"
 image:
-  path: /assets/images/posts/todoist-data-analysis/todoist-post.png
+  path: /assets/images/posts/pyspark-upsert/spark_python.png
   thumbnail: /assets/images/posts/pyspark-upsert/spark_python.png
 categories:
  - data analysis
