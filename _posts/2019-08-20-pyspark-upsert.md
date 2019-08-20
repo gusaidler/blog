@@ -4,7 +4,7 @@ title: "Simulating an UPSERT between 2 datasets using pySpark"
 excerpt: "Sometimes, when working with big datasets in Hadoop, you will need to join data which share the same structure together"
 image:
   path: /assets/images/posts/todoist-data-analysis/todoist-post.png
-  thumbnail: /assets/images/posts/todoist-data-analysis/todoist-post.png
+  thumbnail: /assets/images/posts/pyspark-upsert/spark_python.png
 categories:
  - data analysis
 tags:
@@ -17,7 +17,7 @@ I recently had a situation where an existing dataset was already stored in Hadoo
 
  This new dataset shared the exact same field structure as the existing one, but it contained new rows of data **as well as data that was already present in the existing one**.  Here's an example to clarify:
 
-<figure style="width: 220px" class="align-right">
+<figure style="width: 400px" class="align-center">
   <img src="{{ '/assets/images/posts/pyspark-upsert/sample.png' | absolute_url }}" alt="">
   <figcaption>Dataset sample</figcaption>
 </figure>
@@ -28,7 +28,7 @@ If you come from the relational database world, you probably know that an UPSERT
 
 The only available technology for me to handle this at the time was Spark, and by default, Spark doesn't support UPSERTs. Therefore, I had to implement it on my own. **I needed 2 things to make it work: a primary key and a last modified date field**
 
-For reference, I used spark 2.4.3 in Ubuntu 18.04 LTS for this demo
+For reference, I used spark 2.4.3 in Ubuntu 18.04 LTS for this demo{: .notice--warning}
 
 Here's what I did:
 
