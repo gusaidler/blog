@@ -18,7 +18,7 @@ I recently had a situation where an existing dataset was already stored in Hadoo
  This new dataset shared the exact same field structure as the existing one, but it contained new rows of data **as well as data that was already present in the existing one**.  Here's an example to clarify:
 
 <figure style="width: 220px" class="align-right">
-  <img src="{{ '/assets/images/posts/pyspark-sample.png' | absolute_url }}" alt="">
+  <img src="{{ '/assets/images/posts/pyspark-upsert/sample.png' | absolute_url }}" alt="">
   <figcaption>Dataset sample</figcaption>
 </figure>
 
@@ -93,12 +93,12 @@ df_upsert.show()
 |  1|    John| 30|  1000|2019-08-01 00:00:00| #remove
 |  2|   Peter| 35|  1500|2019-08-02 00:00:00| #remove
 |  3|    Gabe| 21|   800|2019-08-03 00:00:00| #remove
-|  4|   Oscar| 29|  2000|2019-08-04 00:00:00|r
-|  5|    Anna| 20|  1200|2019-08-05 00:00:00|
-|  1|    John| 30|  3000|2019-08-12 00:00:00|
-|  2|   Peter| 35|  3500|2019-08-12 00:00:00|
-|  3|    Gabe| 21|   800|2019-08-12 00:00:00|
-|  6|Patricia| 40|  2500|2019-08-12 00:00:00|
+|  4|   Oscar| 29|  2000|2019-08-04 00:00:00| #keep
+|  5|    Anna| 20|  1200|2019-08-05 00:00:00| #keep
+|  1|    John| 30|  3000|2019-08-12 00:00:00| #keep
+|  2|   Peter| 35|  3500|2019-08-12 00:00:00| #keep
+|  3|    Gabe| 21|   800|2019-08-12 00:00:00| #keep
+|  6|Patricia| 40|  2500|2019-08-12 00:00:00| #keep
 +---+--------+---+------+-------------------+
 ```
 As mentioned earlier, a primary key and a last modified date field are necessary to make this work. In this example, I have 'id' and 'last_modified_date'.
