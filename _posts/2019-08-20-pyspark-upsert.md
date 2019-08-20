@@ -28,7 +28,8 @@ If you come from the relational database world, you probably know that an UPSERT
 
 The only available technology for me to handle this at the time was Spark, and by default, Spark doesn't support UPSERTs. Therefore, I had to implement it on my own. **I needed 2 things to make it work: a primary key and a last modified date field**
 
-For reference, I used spark 2.4.3 in Ubuntu 18.04 LTS for this demo{: .notice--warning}
+For reference, I used spark 2.4.3 in Ubuntu 18.04 LTS for this demo
+{: .notice--warning}
 
 Here's what I did:
 
